@@ -1,0 +1,31 @@
+.navbar {
+	position: fix;
+	display: flex;
+	width: 100%;
+	background-color: $white;
+	box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+	font-family: $font-family-second;
+	align-items: center;
+	justify-content: space-between;
+
+	.logo {
+		a {
+			font-weight: 600;
+			font-size: 2.1875rem;
+			color: $gray;
+			font-family: $font-family-base;
+		}
+	}
+
+	&-nav {
+		li {
+			display: inline-block;
+			a {
+				color: $gray;
+				font-size: 1.125rem;
+				font-weight: 500;
+				margin-left: 1.5625rem;
+			}
+		}
+	}
+}

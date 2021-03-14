@@ -1,0 +1,45 @@
+html {
+	font-size: 100%;
+	box-sizing: border-box;
+}
+
+ul li {
+	list-style: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.3;
+	font-weight: 300;
+	overflow-x: hidden;
+}
+
+a,
+a:visited,
+a:hover {
+	text-decoration: none;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 100%;
+
+	&-pxy {
+		padding: 6rem 6rem;
+	}
+
+	&-px {
+		padding: 0 4.75rem;
+	}
+
+	&-py {
+		padding: 4.375rem 0;
+	}
+}
