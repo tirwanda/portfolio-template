@@ -38,6 +38,10 @@ a:hover {
 
 	&-px {
 		padding: 0 4.75rem;
+
+		@include breakpoint-down(medium) {
+			padding: 1rem 1.75rem;
+		}
 	}
 
 	&-py {
@@ -74,5 +78,22 @@ a:hover {
 
 	&-ai-c {
 		align-items: center;
+	}
+}
+
+.noscroll {
+	overflow: hidden;
+}
+
+// Visibillity
+.hide-for-mobile {
+	@include breakpoint-down(medium) {
+		display: none;
+	}
+}
+
+.hide-for-desktop {
+	@include breakpoint-up(large) {
+		display: none;
 	}
 }

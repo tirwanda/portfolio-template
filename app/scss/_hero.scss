@@ -1,41 +1,81 @@
+.hero-section {
+	z-index: 1;
+}
+
 .hero {
 	background-image: url('../images/bg.png');
 	height: 100vh;
 	min-height: 31.25rem;
 	position: relative;
 	overflow-y: hidden;
+	z-index: 1;
 
 	.container {
 		margin: auto 0;
 	}
 
 	.model {
-		height: 35rem;
+		height: 40rem;
 		position: absolute;
 		left: 50%;
-		top: 50%;
+		top: 41%;
 		transform: translateY(-34%);
 	}
 
 	&-content {
 		.text-1 {
 			font-size: 1.6875rem;
+
+			@include breakpoint-down(medium) {
+				font-size: 1.375rem;
+			}
 		}
 
 		.text-2 {
 			font-size: 2.8125rem;
 			font-weight: 600;
 			margin-left: -3px;
+
+			@include breakpoint-down(medium) {
+				font-size: 2.3175rem;
+			}
 		}
 
 		.text-3 {
 			font-size: 2rem;
 			margin: 0.3125rem 0;
+
+			@include breakpoint-down(medium) {
+				font-size: 2rem;
+			}
 		}
 
 		span {
 			color: crimson;
 			font-weight: 500;
+		}
+
+		a {
+			background-color: crimson;
+			display: inline-block;
+			color: $white;
+			font-weight: 600;
+			font-size: 1.5rem;
+			padding: 0.75rem 2rem;
+			margin-top: 1.5rem;
+			border-radius: 7px;
+			border: 2px solid crimson;
+			transition: all 0.3s ease-in-out;
+
+			@include breakpoint-down(medium) {
+				font-size: 1.3125rem;
+				padding: 0.5625rem 1.25rem;
+			}
+
+			&:hover {
+				color: $gray;
+				background: none;
+			}
 		}
 	}
 }

@@ -1,46 +1,109 @@
 .header {
 	background: url('../images/bg.png');
+	z-index: 2;
+
+	&_toggle {
+		> span {
+			display: block;
+			width: 26px;
+			height: 2px;
+			background-color: $darkBlue;
+			transition: all 300ms ease-in-out;
+			transform-origin: 4px 1px;
+
+			&:not(:last-child) {
+				margin-bottom: 4px;
+			}
+		}
+	}
+
+	&_menu {
+		position: absolute;
+		background: white;
+		visibility: 0;
+		width: calc(100% - 3rem);
+		left: 50%;
+		transform: translateX(-50%);
+		padding: 1.625rem;
+		margin-top: 5.5rem;
+		border-radius: 7px;
+		z-index: 2;
+		a {
+			color: $gray;
+			font-weight: 600;
+			text-align: center;
+			display: block;
+			padding: 0.625rem;
+		}
+	}
+
+	&.open {
+		.header_toggle {
+			> span:first-child {
+				transform: rotate(45deg);
+			}
+
+			> span:nth-child(2) {
+				opacity: 0;
+			}
+
+			> span:last-child {
+				transform: rotate(-45deg);
+			}
+		}
+	}
+
+	.navbar {
+		position: fixed;
+		display: flex;
+		width: 100%;
+		font-family: $font-family-second;
+		align-items: center;
+		justify-content: space-between;
+		padding-top: 0.75rem;
+		z-index: 999;
+
+		transition: all 0.3s ease-in-out;
+
+		.logo {
+			a {
+				font-weight: 600;
+				font-size: 2.1875rem;
+				color: $gray;
+				font-family: $font-family-base;
+			}
+		}
+
+		&-nav {
+			li {
+				display: inline-block;
+				a {
+					color: $gray;
+					font-size: 1.125rem;
+					font-weight: 500;
+					margin-left: 1.5625rem;
+					transition: color 0.3s ease-in-out;
+
+					&:hover {
+						color: crimson;
+					}
+				}
+			}
+		}
+	}
 }
 
 .sticky {
 	background-color: rgb(219, 217, 217);
 }
 
-.navbar {
+.overlay {
+	opacity: 1;
 	position: fixed;
-	display: flex;
-	width: 100%;
-	font-family: $font-family-second;
-	align-items: center;
-	justify-content: space-between;
-	padding-top: 0.75rem;
-	z-index: 999;
-
-	transition: all 0.3s ease-in-out;
-
-	.logo {
-		a {
-			font-weight: 600;
-			font-size: 2.1875rem;
-			color: $gray;
-			font-family: $font-family-base;
-		}
-	}
-
-	&-nav {
-		li {
-			display: inline-block;
-			a {
-				color: $gray;
-				font-size: 1.125rem;
-				font-weight: 500;
-				margin-left: 1.5625rem;
-				transition: color 0.3s ease-in-out;
-
-				&:hover {
-					color: crimson;
-				}
-			}
-		}
-	}
+	top: 4rem;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient($darkBlue, transparent);
+	z-index: 2;
 }
