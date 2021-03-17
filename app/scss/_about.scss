@@ -1,0 +1,113 @@
+.about {
+	font-family: $font-family-base;
+
+	.title {
+		position: relative;
+		text-align: center;
+		font-size: 2.5rem;
+		font-weight: 500;
+		margin-bottom: 3.75rem;
+		padding-bottom: 1.25rem;
+		font-family: $font-family-second;
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: 12.1875rem;
+			height: 3px;
+			bottom: 0px;
+			left: 50%;
+			transform: translateX(-50%);
+			background: #111;
+		}
+
+		&::after {
+			content: 'who i am';
+			position: absolute;
+			bottom: -0.75rem;
+			left: 50%;
+			font-size: 1.25rem;
+			color: crimson;
+			padding: 5px;
+			background: $white;
+			transform: translateX(-50%);
+		}
+	}
+	&-content {
+		flex-wrap: wrap;
+		align-items: center;
+
+		.column {
+			@include breakpoint-down(medium) {
+				width: 50%;
+			}
+
+			@include breakpoint-down(small) {
+				width: 100%;
+			}
+		}
+
+		.left {
+			width: 45%;
+
+			@include breakpoint-down(small) {
+				display: flex;
+				justify-content: center;
+				margin: 0 auto 3.75rem;
+			}
+
+			img {
+				height: 25rem;
+				width: 25rem;
+				object-fit: cover;
+				border-radius: 7px;
+
+				@include breakpoint-down(medium) {
+					height: 21.875rem;
+					width: 21.875rem;
+				}
+			}
+		}
+
+		.right {
+			width: 55%;
+			@include breakpoint-down(small) {
+				flex: 100%;
+			}
+			@include breakpoint-down(medium) {
+				padding-left: 1rem;
+			}
+
+			.text {
+				font-size: 1.5625rem;
+				font-weight: 600;
+				margin-bottom: 0.625rem;
+
+				span {
+					color: crimson;
+				}
+			}
+			p {
+				text-align: justify;
+			}
+
+			a {
+				background-color: crimson;
+				display: inline-block;
+				color: $white;
+				font-weight: 500;
+				font-size: 1.25rem;
+				padding: 5px 1.25rem;
+				margin-top: 1.5rem;
+				border-radius: 7px;
+				border: 2px solid crimson;
+				transition: all 0.3s ease-in-out;
+
+				&:hover {
+					color: $gray;
+					background: none;
+				}
+			}
+		}
+	}
+}

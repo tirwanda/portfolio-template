@@ -44,7 +44,7 @@ a:hover {
   padding: 0 4.75rem;
 }
 
-@media (max-width: 63.9375em) {
+@media (max-width: 66.357em) {
   .container-px {
     padding: 1rem 1.75rem;
   }
@@ -98,7 +98,7 @@ a:hover {
   overflow: hidden;
 }
 
-@media (max-width: 63.9375em) {
+@media (max-width: 66.357em) {
   .hide-for-mobile {
     display: none;
   }
@@ -314,7 +314,7 @@ a:hover {
   font-size: 1.6875rem;
 }
 
-@media (max-width: 63.9375em) {
+@media (max-width: 66.357em) {
   .hero-content .text-1 {
     font-size: 1.375rem;
   }
@@ -326,7 +326,7 @@ a:hover {
   margin-left: -3px;
 }
 
-@media (max-width: 63.9375em) {
+@media (max-width: 66.357em) {
   .hero-content .text-2 {
     font-size: 2.3175rem;
   }
@@ -337,7 +337,7 @@ a:hover {
   margin: 0.3125rem 0;
 }
 
-@media (max-width: 63.9375em) {
+@media (max-width: 66.357em) {
   .hero-content .text-3 {
     font-size: 2rem;
   }
@@ -362,7 +362,7 @@ a:hover {
   transition: all 0.3s ease-in-out;
 }
 
-@media (max-width: 63.9375em) {
+@media (max-width: 66.357em) {
   .hero-content a {
     font-size: 1.3125rem;
     padding: 0.5625rem 1.25rem;
@@ -370,6 +370,147 @@ a:hover {
 }
 
 .hero-content a:hover {
+  color: #505050;
+  background: none;
+}
+
+.about {
+  font-family: "Poppins", sans-serif;
+}
+
+.about .title {
+  position: relative;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 3.75rem;
+  padding-bottom: 1.25rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.about .title::before {
+  content: '';
+  position: absolute;
+  width: 12.1875rem;
+  height: 3px;
+  bottom: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #111;
+}
+
+.about .title::after {
+  content: 'who i am';
+  position: absolute;
+  bottom: -0.75rem;
+  left: 50%;
+  font-size: 1.25rem;
+  color: crimson;
+  padding: 5px;
+  background: #ffff;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.about-content {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 66.357em) {
+  .about-content .column {
+    width: 50%;
+  }
+}
+
+@media (max-width: 57.1875em) {
+  .about-content .column {
+    width: 100%;
+  }
+}
+
+.about-content .left {
+  width: 45%;
+}
+
+@media (max-width: 57.1875em) {
+  .about-content .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto 3.75rem;
+  }
+}
+
+.about-content .left img {
+  height: 25rem;
+  width: 25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 7px;
+}
+
+@media (max-width: 66.357em) {
+  .about-content .left img {
+    height: 21.875rem;
+    width: 21.875rem;
+  }
+}
+
+.about-content .right {
+  width: 55%;
+}
+
+@media (max-width: 57.1875em) {
+  .about-content .right {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+  }
+}
+
+@media (max-width: 66.357em) {
+  .about-content .right {
+    padding-left: 1rem;
+  }
+}
+
+.about-content .right .text {
+  font-size: 1.5625rem;
+  font-weight: 600;
+  margin-bottom: 0.625rem;
+}
+
+.about-content .right .text span {
+  color: crimson;
+}
+
+.about-content .right p {
+  text-align: justify;
+}
+
+.about-content .right a {
+  background-color: crimson;
+  display: inline-block;
+  color: #ffff;
+  font-weight: 500;
+  font-size: 1.25rem;
+  padding: 5px 1.25rem;
+  margin-top: 1.5rem;
+  border-radius: 7px;
+  border: 2px solid crimson;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.about-content .right a:hover {
   color: #505050;
   background: none;
 }
