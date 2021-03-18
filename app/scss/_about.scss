@@ -1,6 +1,10 @@
 .about {
 	font-family: $font-family-base;
 
+	h2 {
+		margin-top: 0;
+	}
+
 	.title {
 		position: relative;
 		text-align: center;

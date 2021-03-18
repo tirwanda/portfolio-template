@@ -51,7 +51,8 @@ a:hover {
 }
 
 .container-py {
-  padding: 4.375rem 0;
+  padding-top: 4.375rem;
+  padding-bottom: 4.375rem;
 }
 
 .container-pt {
@@ -305,7 +306,7 @@ a:hover {
   height: 40rem;
   position: absolute;
   left: 50%;
-  top: 41%;
+  top: 53%;
   -webkit-transform: translateY(-34%);
           transform: translateY(-34%);
 }
@@ -376,6 +377,10 @@ a:hover {
 
 .about {
   font-family: "Poppins", sans-serif;
+}
+
+.about h2 {
+  margin-top: 0;
 }
 
 .about .title {
@@ -513,5 +518,71 @@ a:hover {
 .about-content .right a:hover {
   color: #505050;
   background: none;
+}
+
+.service {
+  font-family: "Poppins", sans-serif;
+  background: #111;
+  color: #ffff;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.service .title {
+  position: relative;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 3.75rem;
+  padding-bottom: 1.25rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.service .title::before {
+  content: '';
+  position: absolute;
+  width: 12.1875rem;
+  height: 3px;
+  bottom: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #ffff;
+}
+
+.service .title::after {
+  content: 'what i provide';
+  position: absolute;
+  bottom: -0.75rem;
+  left: 50%;
+  font-size: 1.25rem;
+  color: crimson;
+  padding: 5px;
+  background: #111;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.service-content {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.service-content .card {
+  width: calc(33% - 20px);
+  background: #222;
+  text-align: center;
+  border-radius: 7px;
+  padding: 1.25rem 1.5625rem;
+  cursor: pointer;
+}
+
+.service-content i {
+  color: crimson;
+  font-size: 3.125rem;
+  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
