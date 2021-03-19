@@ -580,6 +580,44 @@ a:hover {
   cursor: pointer;
 }
 
+.service-content .card .text {
+  font-size: 1.5625rem;
+  font-weight: 500;
+  margin: 0.625rem 0 0.4375rem;
+}
+
+.service-content .card .box {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.service-content .card .box:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.service-content .card .box:hover i {
+  color: #ffff;
+}
+
+.service-content .card:hover {
+  background: crimson;
+}
+
+@media (max-width: 66.357em) {
+  .service-content .card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 57.1875em) {
+  .service-content .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
 .service-content i {
   color: crimson;
   font-size: 3.125rem;

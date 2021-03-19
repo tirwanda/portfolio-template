@@ -49,6 +49,38 @@
 			border-radius: 7px;
 			padding: 1.25rem 1.5625rem;
 			cursor: pointer;
+
+			.text {
+				font-size: 1.5625rem;
+				font-weight: 500;
+				margin: 0.625rem 0 0.4375rem;
+			}
+
+			.box {
+				transition: all 0.3s ease-in-out;
+
+				&:hover {
+					transform: scale(1.05);
+
+					i {
+						color: $white;
+					}
+				}
+			}
+
+			&:hover {
+				background: crimson;
+			}
+
+			@include breakpoint-down(medium) {
+				width: calc(50% - 10px);
+				margin-bottom: 20px;
+			}
+
+			@include breakpoint-down(small) {
+				width: 100%;
+				margin-bottom: 20px;
+			}
 		}
 
 		i {
