@@ -623,4 +623,136 @@ a:hover {
   font-size: 3.125rem;
   margin-bottom: 1rem;
 }
+
+.skill {
+  font-family: "Poppins", sans-serif;
+}
+
+.skill .title {
+  position: relative;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 3.75rem;
+  padding-bottom: 1.25rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.skill .title::before {
+  content: '';
+  position: absolute;
+  width: 12.1875rem;
+  height: 3px;
+  bottom: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #111;
+}
+
+.skill .title::after {
+  content: 'what i know';
+  position: absolute;
+  bottom: -0.75rem;
+  left: 50%;
+  font-size: 1.25rem;
+  color: crimson;
+  padding: 5px;
+  background: #ffff;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.skill-content {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skill-content .column {
+  width: calc(50% - 30px);
+}
+
+.skill-content .left .text {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.625rem;
+}
+
+.skill-content .left p {
+  text-align: justify;
+}
+
+.skill-content .left a {
+  background-color: crimson;
+  display: inline-block;
+  color: #ffff;
+  font-weight: 500;
+  font-size: 1.25rem;
+  padding: 5px 1.25rem;
+  margin-top: 1.5rem;
+  border-radius: 7px;
+  border: 2px solid crimson;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.skill-content .left a:hover {
+  color: #505050;
+  background: none;
+}
+
+.skill-content .right .bars {
+  margin-bottom: 0.9375rem;
+}
+
+.skill-content .right .bars .info {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.3125rem;
+}
+
+.skill-content .right .bars .info span {
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+.skill-content .right .bars .line {
+  height: 5px;
+  width: 100%;
+  background: lightgray;
+  position: relative;
+}
+
+.skill-content .right .bars .line::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: crimson;
+}
+
+.skill-content .right .html::before {
+  width: 90%;
+}
+
+.skill-content .right .sass::before {
+  width: 80%;
+}
+
+.skill-content .right .js::before {
+  width: 80%;
+}
+
+.skill-content .right .go::before {
+  width: 50%;
+}
+
+.skill-content .right .db::before {
+  width: 60%;
+}
 /*# sourceMappingURL=style.css.map */
