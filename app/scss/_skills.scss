@@ -40,9 +40,16 @@
 
 		.column {
 			width: calc(50% - 30px);
+
+			@include breakpoint-down(medium) {
+				width: 100%;
+			}
 		}
 
 		.left {
+			@include breakpoint-down(medium) {
+				margin-bottom: 2rem;
+			}
 			.text {
 				font-size: 1.25rem;
 				font-weight: 600;
@@ -60,7 +67,6 @@
 				font-weight: 500;
 				font-size: 1.25rem;
 				padding: 5px 1.25rem;
-				margin-top: 1.5rem;
 				border-radius: 7px;
 				border: 2px solid crimson;
 				transition: all 0.3s ease-in-out;
