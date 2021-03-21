@@ -766,4 +766,127 @@ a:hover {
 .skill-content .right .db::before {
   width: 60%;
 }
+
+.team {
+  font-family: "Poppins", sans-serif;
+  background: #111;
+  color: #ffff;
+}
+
+.team .title {
+  position: relative;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 3.75rem;
+  padding-bottom: 1.25rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.team .title::before {
+  content: '';
+  position: absolute;
+  width: 12.1875rem;
+  height: 3px;
+  bottom: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #ffff;
+}
+
+.team .title::after {
+  content: 'who with me';
+  position: absolute;
+  bottom: -0.75rem;
+  left: 50%;
+  font-size: 1.25rem;
+  color: crimson;
+  padding: 5px;
+  background: #111;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.team .card {
+  text-align: center;
+  background: #222;
+  border-radius: 7px;
+  padding: 1.5625rem 2.1875rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.team .card:hover {
+  background: crimson;
+  cursor: pointer;
+}
+
+.team .card:hover .box {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.team .card:hover .box img {
+  border-color: aliceblue;
+}
+
+.team .owl-carousel .owl-item img {
+  height: 10rem;
+  width: 10rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid crimson;
+}
+
+.team .owl-dots {
+  text-align: center;
+  margin-top: 1.25rem;
+}
+
+.team .owl-dot {
+  height: 0.8125rem;
+  width: 0.8125rem;
+  outline: none !important;
+  border-radius: 50%;
+  border: 2px solid crimson !important;
+  margin: 0 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.team .owl-dot:hover {
+  background: crimson !important;
+}
+
+.team .active {
+  width: 2.1875rem;
+  border-radius: 0.875rem;
+  background: crimson !important;
+}
+
+.team .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.team .box .text {
+  font-size: 1.5625rem;
+  font-weight: 500;
+  margin: 0.625rem 0 0.4375rem;
+}
 /*# sourceMappingURL=style.css.map */
