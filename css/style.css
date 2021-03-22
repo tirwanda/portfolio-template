@@ -889,4 +889,117 @@ a:hover {
   font-weight: 500;
   margin: 0.625rem 0 0.4375rem;
 }
+
+.contact {
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-content {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact .title {
+  position: relative;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 3.75rem;
+  padding-bottom: 1.25rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.contact .title::before {
+  content: '';
+  position: absolute;
+  width: 12.1875rem;
+  height: 3px;
+  bottom: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #111;
+}
+
+.contact .title::after {
+  content: 'get in touch';
+  position: absolute;
+  bottom: -0.75rem;
+  left: 50%;
+  font-size: 1.25rem;
+  color: crimson;
+  padding: 5px;
+  background: #ffff;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.contact .column {
+  width: calc(50% - 1.875rem);
+}
+
+.contact .text {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-bottom: 0.625rem;
+}
+
+.contact .left .icon {
+  margin: 0.625rem 0;
+}
+
+.contact .left .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 4.0625rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .left .row .info {
+  margin-left: 1.875rem;
+}
+
+.contact .left .row .info .head {
+  font-weight: 500;
+}
+
+.contact .left .row .info .sub-title {
+  color: #333;
+}
+
+.contact .left i {
+  font-size: 1.5625rem;
+  color: crimson;
+}
+
+.contact .left p {
+  text-align: justify;
+}
+
+.contact .right form .fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 2.8125rem;
+  width: 100%;
+}
+
+.contact .right form .field {
+  height: 2.8125rem;
+  width: 100%;
+}
+
+.contact .right form .field input {
+  height: 100%;
+  width: 100%;
+}
 /*# sourceMappingURL=style.css.map */
