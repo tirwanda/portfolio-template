@@ -944,6 +944,13 @@ a:hover {
   width: calc(50% - 1.875rem);
 }
 
+@media (max-width: 66.357em) {
+  .contact .column {
+    width: 100%;
+    margin-bottom: 2.1875rem;
+  }
+}
+
 .contact .text {
   font-weight: 600;
   font-size: 1.25rem;
@@ -991,15 +998,65 @@ a:hover {
   display: flex;
   height: 2.8125rem;
   width: 100%;
+  margin-bottom: 0.625rem;
+}
+
+.contact .right form .name {
+  margin-right: 0.625rem;
+}
+
+.contact .right form .email {
+  margin-left: 0.625rem;
 }
 
 .contact .right form .field {
   height: 2.8125rem;
   width: 100%;
+  margin-bottom: 0.625rem;
 }
 
-.contact .right form .field input {
+.contact .right form .field input,
+.contact .right form .field textarea {
   height: 100%;
   width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 7px;
+  padding: 0 1rem;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact .right form .textarea {
+  height: 5rem;
+}
+
+.contact .right form .textarea textarea {
+  padding-top: 0.625rem;
+  resize: none;
+}
+
+.contact .right form .button {
+  height: 2.9375rem;
+  width: 10.625rem;
+}
+
+.contact .right form .button button {
+  height: 100%;
+  width: 100%;
+  border: 2px solid crimson;
+  border-radius: 7px;
+  background: crimson;
+  color: #ffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .right form .button button:hover {
+  background: none;
+  color: crimson;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
