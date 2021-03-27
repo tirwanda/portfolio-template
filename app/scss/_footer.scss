@@ -1,0 +1,19 @@
+footer {
+	display: flex;
+	font-family: $font-family-base;
+	background: #111;
+	padding: 1.25rem 1.4375rem;
+	color: $white;
+	justify-content: center;
+
+	span {
+		a {
+			color: crimson;
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
