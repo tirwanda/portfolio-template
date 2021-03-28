@@ -2,6 +2,7 @@ const btnHamburger = document.querySelector('#btnHamburger');
 const body = document.querySelector('body');
 const header = document.querySelector('.header');
 const hasFade = document.querySelectorAll('.has-fade');
+const headerMenu = document.querySelector('.header_menu');
 
 btnHamburger.addEventListener('click', () => {
 	if (header.classList.contains('open')) {
@@ -19,6 +20,15 @@ btnHamburger.addEventListener('click', () => {
 			elem.classList.add('fade-in');
 		});
 	}
+});
+
+headerMenu.addEventListener('click', () => {
+	body.classList.remove('noscroll');
+	header.classList.remove('open');
+	hasFade.forEach((elem) => {
+		elem.classList.remove('fade-in');
+		elem.classList.add('fade-out');
+	});
 });
 
 $(document).ready(function () {
@@ -62,4 +72,30 @@ $('.carousel').owlCarousel({
 			nav: false,
 		},
 	},
+});
+
+// Typing animate
+
+var typed = new Typed('.typing', {
+	strings: [
+		'Mobile Developer',
+		'Web Developer',
+		'IoT Developer',
+		'Automation Engineer',
+	],
+	typeSpeed: 100,
+	backSpeed: 60,
+	loop: true,
+});
+
+var typed = new Typed('.typing-2', {
+	strings: [
+		'Mobile Developer',
+		'Web Developer',
+		'IoT Developer',
+		'Automation Engineer',
+	],
+	typeSpeed: 100,
+	backSpeed: 60,
+	loop: true,
 });
